@@ -1,0 +1,56 @@
+.password-item {
+  list-style-type: none;
+  border: 1px solid #b5b7c4;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .password-item {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 32px;
+    width: 297px;
+  }
+}
+
+.password-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.item-text {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 12px;
+  margin: 5px;
+  padding: 0px;
+}
+
+.delete-button {
+  background: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+}
+
+.star-icon {
+  width: 100px;
+  margin: 5px;
+}

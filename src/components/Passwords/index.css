@@ -56,7 +56,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  min-width: 40%;
+  width: 100%;
   padding: 20px;
   border-radius: 10px;
   background-color: #454f84;
@@ -86,10 +86,15 @@
 }
 .search-input-container-bottom {
   display: flex;
-  width: 250px;
+  width: 120px;
   border-radius: 5px;
   background-color: #f1f5f9;
   justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .search-input-container-bottom {
+    width: 250px;
+  }
 }
 .icon {
   width: 20px;
@@ -115,6 +120,8 @@
   padding-top: 8px;
   padding-bottom: 8px;
   border-left: 1px solid #131415;
+  width: 70px;
+  flex-grow: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -176,13 +183,17 @@
     padding-right: 12px;
   }
 }
-
 .passwords-heading {
   color: white;
   font-family: 'Roboto';
-  font-size: 24px;
+  font-size: 12px;
   font-weight: 500;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .passwords-heading {
+    font-size: 24px;
+  }
 }
 .password-count-container {
   display: flex;
@@ -192,36 +203,58 @@
 .passwords-length {
   color: white;
   font-family: 'Roboto';
-  font-size: 12px;
+  font-size: 8px;
   margin: 0;
   border-radius: 10px;
   border: 1px solid white;
   width: 30px;
   text-align: center;
-  margin-left: 10px;
+  margin-left: 2px;
+}
+@media screen and (min-width: 768px) {
+  .passwords-length {
+    font-size: 12px;
+    margin-left: 10px;
+  }
 }
 
 .hr {
   border: 1px solid #b5b7c4;
   width: 100%;
-  margin-top: 25px;
-  margin-bottom: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .password-checkbox-container {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   align-self: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .password-checkbox-container {
+    margin-bottom: 20px;
+  }
 }
 .check-box {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 .show-password {
   color: white;
   font-family: 'Roboto';
-  font-size: 20px;
-  margin-left: 5px;
+  font-size: 10px;
+  margin-left: 2px;
+}
+@media screen and (min-width: 768px) {
+  .check-box {
+    width: 20px;
+    height: 20px;
+  }
+  .show-password {
+    font-size: 20px;
+    margin-left: 5px;
+  }
 }
 
 .passwords-list {
@@ -253,6 +286,11 @@
 .my-text {
   font-family: 'Calibri';
   color: #454f84;
-  font-size: 14px;
+  font-size: 10px;
   margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  .my-text {
+    font-size: 14px;
+  }
 }
